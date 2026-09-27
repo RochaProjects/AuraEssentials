@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AuraPanel | Rocha Project</title>
+  <meta name="description" content="Painel local do AuraEssentials.">
+  <link rel="stylesheet" href="./aura-panel.css">
+</head>
+<body>
+  <header class="ap-header">
+    <a class="ap-brand" href="./wiki.html"><span class="ap-brand-mark">A</span><span>Rocha <b>Project</b></span></a>
+    <nav class="ap-nav" aria-label="Principal"><a href="./wiki.html">Wiki</a><a class="active" href="./aura-panel.html">AuraPanel</a><a href="./comunidade.html">Comunidade</a><a href="./downloads.html">Downloads</a></nav>
+    <button class="ap-account" id="account-button" type="button"><span>R</span> Conta Rocha</button>
+  </header>
+  <main class="ap-page">
+    <section class="ap-intro"><div><p class="ap-kicker">AuraEssentials / administração</p><h1>Painel do servidor</h1><p>Edite uma configuração local completa do AuraPanel. As alterações ficam neste navegador até serem salvas.</p></div><div class="ap-code"><label for="server-code">Código da sessão</label><div><input id="server-code" value="DEMO1234" maxlength="16"><button id="load-server" class="ap-button primary" type="button">Carregar</button></div><small id="status-line">Sessão mock carregada localmente.</small></div></section>
+    <section id="panel" class="ap-panel">
+      <div class="ap-summary"><div><span>Servidor</span><strong id="server-name"></strong></div><div><span>Plugin</span><strong id="plugin-version"></strong></div><div><span>Acesso</span><strong id="access-state"></strong></div><div><span>Alterações</span><strong id="change-count">0</strong></div></div>
+      <div class="ap-workspace">
+        <aside class="ap-sidebar"><p class="ap-sidebar-label">Áreas do painel</p><div id="tabs"></div><div class="ap-sidebar-foot"><button id="save-button" class="ap-button primary" type="button">Salvar rascunho</button><button id="changes-button" class="ap-button ghost" type="button">Ver alterações</button></div></aside>
+        <section class="ap-main"><header class="ap-section-head"><div><p id="tab-kicker" class="ap-kicker"></p><h2 id="tab-title"></h2></div><div class="ap-head-actions"><button id="claim-button" class="ap-button ghost" type="button">Vincular conta</button><button id="refresh-button" class="ap-icon-button" type="button" title="Recarregar mock">↻</button></div></header><div id="tab-body"></div></section>
+      </div>
+    </section>
+  </main>
+  <dialog id="changes-dialog" class="ap-dialog"><form method="dialog"><header><div><p class="ap-kicker">Rascunho local</p><h2>Alterações</h2></div><button class="ap-icon-button" value="close" aria-label="Fechar">×</button></header><div id="changes-list"></div></form></dialog>
+  <script src="./aura-panel.js" defer></script>
+</body>
+</html>

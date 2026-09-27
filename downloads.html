@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AuraEssentials — Downloads</title>
+    <meta name="description" content="Downloads do AuraEssentials: builds, versões, packs e artefatos oficiais." />
+    <link rel="icon" type="image/png" href="./assets/brand-mark.png" />
+    <link rel="stylesheet" href="./style.css?v=1" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="Rocha Project">
+        <img src="./assets/logo.png" alt="" />
+        <span data-i18n="brand.rocha">Rocha</span>
+        <span data-i18n="brand.project">Project</span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <a href="./wiki.html" data-i18n="nav.wiki">Wiki</a>
+        <a href="./aura-panel.html">AuraPanel</a>
+        <a href="./comunidade.html" data-i18n="nav.community">Comunidade</a>
+        <a href="./downloads.html" class="active" data-i18n="nav.downloads">Downloads</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="account-button" type="button">
+          <span class="account-initial" aria-hidden="true">R</span>
+          <span data-i18n="account.login">Entrar</span>
+        </button>
+        <div class="language-switch" aria-label="Idioma">
+          <button class="active" type="button" data-lang="pt">PT</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-shell">
+      <section class="view clean-page wiki-page active">
+        <div class="wiki-content">
+          <header class="wiki-hero wiki-landing-hero">
+            <p class="eyebrow">Downloads</p>
+            <h1>Builds e recursos</h1>
+            <p>Versoes do plugin, packs, artefatos e itens usados para instalar e operar o servidor.</p>
+          </header>
+
+          <details class="wiki-section wiki-details" open>
+            <summary><span>Build do plugin</span></summary>
+            <div class="wiki-section-body">
+              <div class="wiki-grid">
+                <article>
+                  <h3>Versao atual</h3>
+                  <p>O jar principal do servidor fica em <code>plugins/AuraEssentials/</code> e a versao atual no projeto e visualizada em <code>pom.xml</code>.</p>
+                  <pre><code>plugins/AuraEssentials/
+  auraessentials-1.0.5.jar
+  config.yml
+  shop.yml
+  missions.yml</code></pre>
+                </article>
+                <article>
+                  <h3>Artefatos complementares</h3>
+                  <p>Use os packs e extensoes conforme o seu alvo: Java, Bedrock e integrações opcionais.</p>
+                  <ul>
+                    <li>Resource Pack Java.</li>
+                    <li>Resource Pack Bedrock.</li>
+                    <li>Extensões do sistema.</li>
+                    <li>Arquivos de configuração e modularizacao.</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </details>
+
+          <details class="wiki-section wiki-details">
+            <summary><span>Pack e recursos</span></summary>
+            <div class="wiki-section-body">
+              <p>Os glyphs e packs dependem da configuracao de Java/Bedrock e do modulo ativo para renderizacao correta.</p>
+              <ul>
+                <li>Pack Java: aplicado ao cliente Java.</li>
+                <li>Pack Bedrock: ativo em setups com Geyser/Floodgate ou Bedrock.</li>
+                <li>Glyphs do projeto: usados em cargos, prefix, VIP e UI.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="wiki-section wiki-details">
+            <summary><span>Extensoes</span></summary>
+            <div class="wiki-section-body">
+              <p>Extensoes separadas do core ficam no workspace e podem ser carregadas junto com o plugin quando o sistema estiver preparado.</p>
+              <ul>
+                <li>Aura AntiCheat</li>
+                <li>Chat Game</li>
+                <li>Guerra de Reinos Bridge</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <script src="./lang.js?v=6" defer></script>
+    <script src="./app.js?v=10" defer></script>
+  </body>
+</html>

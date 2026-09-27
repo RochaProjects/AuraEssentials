@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AuraEssentials — Comunidade</title>
+    <meta name="description" content="Comunidade do AuraEssentials: Discord, suporte, regras, grupos e eventos." />
+    <link rel="icon" type="image/png" href="./assets/brand-mark.png" />
+    <link rel="stylesheet" href="./style.css?v=1" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="Rocha Project">
+        <img src="./assets/logo.png" alt="" />
+        <span data-i18n="brand.rocha">Rocha</span>
+        <span data-i18n="brand.project">Project</span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <a href="./wiki.html" data-i18n="nav.wiki">Wiki</a>
+        <a href="./aura-panel.html">AuraPanel</a>
+        <a href="./comunidade.html" class="active" data-i18n="nav.community">Comunidade</a>
+        <a href="./downloads.html" data-i18n="nav.downloads">Downloads</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="account-button" type="button">
+          <span class="account-initial" aria-hidden="true">R</span>
+          <span data-i18n="account.login">Entrar</span>
+        </button>
+        <div class="language-switch" aria-label="Idioma">
+          <button class="active" type="button" data-lang="pt">PT</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-shell">
+      <section class="view clean-page wiki-page active">
+        <div class="wiki-content">
+          <header class="wiki-hero wiki-landing-hero">
+            <p class="eyebrow">Comunidade</p>
+            <h1>Rocha Project</h1>
+            <p>Discord, suporte, eventos, regras, canais e interacao com a comunidade.</p>
+          </header>
+
+          <details class="wiki-section wiki-details" open>
+            <summary><span>Discord</span></summary>
+            <div class="wiki-section-body">
+              <div class="wiki-grid">
+                <article>
+                  <h3>Discord principal</h3>
+                  <p>Use o Discord para vinculo, suporte, avisos, brigde e canais de administracao.</p>
+                  <ul>
+                    <li><code>chatChannelId</code>: canal publico de bridge.</li>
+                    <li><code>controlChannelId</code>: canal privado de controle.</li>
+                    <li><code>forceOnJoin</code>: exige vinculo ao entrar.</li>
+                  </ul>
+                </article>
+                <article>
+                  <h3>Regras de comunidade</h3>
+                  <p>O carregamento do bridge e do Discord depende do token do bot, permissao do canal e modulo ativo.</p>
+                  <pre><code>/vincular
+/vincular &lt;codigo&gt;
+/desvincular &lt;jogador&gt;</code></pre>
+                </article>
+              </div>
+            </div>
+          </details>
+
+          <details class="wiki-section wiki-details">
+            <summary><span>Suporte</span></summary>
+            <div class="wiki-section-body">
+              <div class="wiki-grid">
+                <article>
+                  <h3>Checklist antes de pedir ajuda</h3>
+                  <p>Confirme modulo ativo, comando funcionando, link do painel, resource pack e permissao do jogador.</p>
+                  <ul>
+                    <li>Modulo ativo em <code>modules.enabled</code>.</li>
+                    <li>Comando no tablist e sem erro de permissao.</li>
+                    <li>Resource pack carregado corretamente.</li>
+                    <li>Login, Discord e painel vinculados.</li>
+                  </ul>
+                </article>
+                <article>
+                  <h3>Fluxo de suporte</h3>
+                  <p>Use o canal correto e envie print, logs, config relevante e step-by-step de reproducao.</p>
+                  <pre><code>/aurapainel status
+/aurapainel alteracoes
+/aurapainel aplicar
+/aurasetup status</code></pre>
+                </article>
+              </div>
+            </div>
+          </details>
+
+          <details class="wiki-section wiki-details">
+            <summary><span>Eventos e grupos</span></summary>
+            <div class="wiki-section-body">
+              <p>Eventos oficiais, desafios, guildas e comunidade do servidor ficam em canais de suporte e comunidade do Discord.</p>
+              <ul>
+                <li>Guildas e clans.</li>
+                <li>Eventos de PvP e duelos.</li>
+                <li>Premios de crate e keys timer.</li>
+                <li>Atividades de staff e administracao.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <script src="./lang.js?v=6" defer></script>
+    <script src="./app.js?v=10" defer></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+# Arquivos compactados / backups
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Sistema operacional
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editores / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs e temporários
+*.log
+*.tmp
+~$*
+
+# Dependências (se algum dia usar npm)
+node_modules/
+package-lock.json
+referencia/
+
+# Env / segredos
+.env
+.env.local

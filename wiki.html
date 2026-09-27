@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AuraEssentials Wiki</title>
+    <meta name="description" content="Wiki do AuraEssentials — instalação, permissões, módulos, comandos e configuração do plugin." />
+    <link rel="icon" type="image/png" href="./assets/brand-mark.png" />
+    <link rel="apple-touch-icon" href="./assets/brand-mark.png" />
+    <link rel="stylesheet" href="./style.css?v=1" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#wiki-instalacao" aria-label="Rocha Project">
+        <img src="./assets/logo.png" alt="" />
+        <span data-i18n="brand.rocha">Rocha</span>
+        <span data-i18n="brand.project">Project</span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <a href="./wiki.html#wiki-instalacao" class="active" data-i18n="nav.wiki">Wiki</a>
+        <a href="./aura-panel.html">AuraPanel</a>
+        <a href="./comunidade.html" data-i18n="nav.community">Comunidade</a>
+        <a href="./downloads.html" data-i18n="nav.downloads">Downloads</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="account-button" type="button">
+          <span class="account-initial" aria-hidden="true">R</span>
+          <span data-i18n="account.login">Entrar</span>
+        </button>
+        <div class="language-switch" aria-label="Idioma">
+          <button class="active" type="button" data-lang="pt">PT</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-shell">
+      <section id="page-wiki" class="view clean-page wiki-page wiki-manual-open active" data-page-panel="wiki">
+        <aside class="wiki-sidebar" aria-label="Indice da wiki Rocha Project">
+          <a class="wiki-back-link" href="#wiki" data-i18n="sidebar.allWikis">Todas as wikis</a>
+          <strong data-i18n="sidebar.project">AuraEssentials</strong>
+          <a href="#wiki-instalacao" data-i18n="section.install">Instalacao</a>
+          <a href="#wiki-permissoes" data-i18n="section.permissions">Permissoes</a>
+          <a href="#wiki-painel" data-i18n="section.panel">Painel web</a>
+          <a href="#wiki-modulos" data-i18n="section.modules">Modulos</a>
+          <a href="#wiki-crates" data-i18n="extra.cratesTitle">Caixas e chaves</a>
+          <a href="#wiki-chat" data-i18n="extra.chatTitle">Chat local e global</a>
+          <a href="#wiki-player-shop" data-i18n="extra.playerShopTitle">Loja de jogador</a>
+          <a href="#wiki-auction" data-i18n="extra.auctionTitle">Leilão</a>
+          <a href="#wiki-maintenance" data-i18n="extra.maintenanceTitle">Manutenção</a>
+          <a href="#wiki-proxy-portal" data-i18n="extra.proxyPortalTitle">Proxy Portal</a>
+          <a href="#wiki-comandos" data-i18n="section.commands">Referencia completa de comandos</a>
+          <a href="#wiki-login" data-i18n="section.login">Login</a>
+          <a href="#wiki-discord" data-i18n="section.discord">Discord</a>
+          <a href="#wiki-loja" data-i18n="section.shop">Loja</a>
+          <a href="#wiki-missoes" data-i18n="section.missions">Missoes</a>
+          <a href="#wiki-vip" data-i18n="section.vip">VIP e cargos</a>
+          <a href="#wiki-prefix" data-i18n="section.prefix">Prefix visual</a>
+          <a href="#wiki-npc" data-i18n="section.npc">NPC</a>
+          <a href="#wiki-holograma" data-i18n="section.hologram">Holograma</a>
+          <a href="#wiki-cla" data-i18n="section.cla">Cla</a>
+          <a href="#wiki-terreno" data-i18n="section.claim">Terreno</a>
+          <a href="#wiki-protecao" data-i18n="section.protection">Protecao</a>
+          <a href="#wiki-regras-ajuda" data-i18n="section.rules">Regras e ajuda</a>
+          <a href="#wiki-teleporte" data-i18n="section.teleport">Teleporte</a>
+          <a href="#wiki-pvp" data-i18n="section.pvp">PvP</a>
+          <a href="#wiki-border-bloqueios" data-i18n="section.border">Border e bloqueios</a>
+          <a href="#wiki-utilidades" data-i18n="section.utilities">Utilidades</a>
+          <a href="#wiki-troubleshooting" data-i18n="section.troubleshooting">Problemas comuns</a>
+        </aside>
+
+        <div class="wiki-content">
+          <header class="wiki-hero wiki-landing-hero">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Wiki Rocha Project</p>
+            <h1 data-i18n="hero.title">Documentacao dos projetos</h1>
+            <p data-i18n="hero.subtitle">Escolha um projeto para abrir o manual. A ideia aqui e ser rapido: nada de parede de texto logo de cara.</p>
+          </header>
+
+          <section class="wiki-project-board" aria-label="Projetos com wiki">
+            <a class="wiki-project-card active" href="#wiki-auraessentials">
+              <div class="wiki-project-media">
+                <img src="./assets/Afree.png" alt="AuraEssentials" loading="lazy" />
+              </div>
+              <span data-i18n="project.plugin">Plugin</span>
+              <strong>AuraEssentials</strong>
+              <p data-i18n="project.pluginDesc">Instalacao, painel web, modulos, comandos e configuracao.</p>
+            </a>
+            <article class="wiki-project-card muted">
+              <div class="wiki-project-media">
+                <img src="./assets/rlauncher.png" alt="RLauncher" loading="lazy" />
+              </div>
+              <span data-i18n="project.launcher">Launcher</span>
+              <strong>RLauncher</strong>
+              <p data-i18n="project.launcherDesc">Launcher Java/Bedrock, sessoes e downloads.</p>
+            </article>
+            <article class="wiki-project-card muted">
+              <div class="wiki-project-media">
+                <img src="./assets/en_auraclient.png" alt="AuraClient" loading="lazy" />
+              </div>
+              <span data-i18n="project.client">Client</span>
+              <strong>AuraClient</strong>
+              <p data-i18n="project.clientDesc">Cliente, mod, cosmeticos e integracao com servidor.</p>
+            </article>
+          </section>
+
+          <div class="wiki-doc-head">
+            <p class="eyebrow">AuraEssentials</p>
+            <h2 data-i18n="content.manualTitle">Manual do plugin</h2>
+            <p data-i18n="content.manualText">Os topicos ficam recolhidos para a pagina nao virar uma parede de texto. Use a lateral ou abra pelo sinal de +.</p>
+            <div class="wiki-badges shield-badges" aria-label="Resumo da wiki AuraEssentials">
+              <img src="https://img.shields.io/badge/Projeto-AuraEssentials-8A2BE2?style=flat-square" alt="Projeto AuraEssentials" loading="lazy" />
+              <img src="https://img.shields.io/badge/Minecraft-1.21.9%2B-5E9C3F?style=flat-square" alt="Minecraft 1.21.9+" loading="lazy" />
+              <img src="https://img.shields.io/badge/Servidor-Paper%20%7C%20Purpur%20%7C%20Pufferfish-A855F7?style=flat-square" alt="Paper Purpur Pufferfish" loading="lazy" />
+              <img src="https://img.shields.io/badge/Geyser-Opcional-5865F2?style=flat-square" alt="Geyser opcional" loading="lazy" />
+            </div>
+          </div>
+
+          <details id="wiki-instalacao" class="wiki-section wiki-details" open>
+            <summary><span data-i18n="section.install">Instalacao</span></summary>
+            <div class="wiki-section-body">
+              <div class="wiki-grid">
+                <article>
+                  <h3 data-i18n="install.serverTitle">Servidor recomendado</h3>
+                  <p data-i18n="install.serverText">Use Paper, Purpur ou Pufferfish na linha 1.21.9+. O plugin foi feito para rodar como plugin Bukkit/Paper normal, sem proxy obrigatorio.</p>
+                  <ul>
+                    <li data-i18n="install.step1">Coloque o jar em <code>plugins/</code>.</li>
+                    <li data-i18n="install.step2">Reinicie o servidor uma vez para gerar arquivos.</li>
+                    <li data-i18n="install.step3">Edite <code>plugins/AuraEssentials/config.yml</code>, <code>shop.yml</code> e <code>missions.yml</code> quando quiser ajustar manualmente.</li>
+                    <li data-i18n="install.step4">Use <code>/aurasetup reload</code> depois de alterar configs manualmente.</li>
+                  </ul>
+                </article>
+                <article>
+                  <h3 data-i18n="install.optTitle">Dependencias opcionais</h3>
+                  <p data-i18n="install.optText">Geyser/Floodgate sao softdepend. Se estiverem presentes, o menu Bedrock e forms administrativos ficam mais naturais para jogadores Bedrock.</p>
+                  <ul>
+                    <li data-i18n="install.opt1">Java: resource pack de glyphs pode ser enviado automaticamente.</li>
+                    <li data-i18n="install.opt2">Bedrock: resource pack pode ser copiado para a pasta do Geyser.</li>
+                    <li data-i18n="install.opt3">Discord: precisa de bot token e canal de controle se for usar bridge/vinculo.</li>
+                    <li data-i18n="install.packRequired">O pack Java e obrigatorio por padrao; no Bedrock, o pack e forcado quando a integracao estiver habilitada.</li>
+                  </ul>
+                </article>
+              </div>
+              <pre><code>/plugins
+  auraessentials-1.0.5-obf.jar
+
+/plugins/AuraEssentials
+  config.yml
+  shop.yml
+  missions.yml
+  aura-panel.yml</code></pre>
+            </div>
+          </details>
+
+          <details id="wiki-permissoes" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.permissions">Permissoes base</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="permissions.explain">Lista principal de permissões do plugin para administração, login, terrenos, teleporte, VIP e moderação.</p>
+              <div class="wiki-command-table">
+                <div><strong><code>kingdoms.admin</code></strong><span data-i18n="permissions.admin">Administra o plugin, abre painel, muda sistemas, NPC, holograma, economia, cargos e servidor. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.rapidologin</code></strong><span data-i18n="permissions.rapidLogin">Permite usar <code>/rapidologin</code> para autenticar jogador rapidamente. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.graveto</code></strong><span data-i18n="permissions.graveto">Permite pegar o graveto de captura com <code>/graveto</code>. (padrao: todos)</span></div>
+                <div><strong><code>kingdoms.graveto.use</code></strong><span data-i18n="permissions.gravetoUse">Permite usar o graveto de captura nos mobs liberados. (padrao: todos)</span></div>
+                <div><strong><code>kingdoms.vanish</code></strong><span data-i18n="permissions.vanish">Permite usar <code>/vanish</code>. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.vanish.see</code></strong><span data-i18n="permissions.vanishSee">Permite ver jogadores que estao em vanish. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.terreno</code></strong><span data-i18n="permissions.terreno">Permite usar <code>/terreno</code>; o servidor ainda pode exigir VIP. (padrao: todos)</span></div>
+                <div><strong><code>kingdoms.vincular</code></strong><span data-i18n="permissions.vincular">Permite usar <code>/vincular</code> para conectar Discord. (padrao: todos)</span></div>
+                <div><strong><code>kingdoms.autopickup</code></strong><span data-i18n="permissions.autopickup">Permite alternar AutoPickup pessoal. (padrao: todos)</span></div>
+                <div><strong><code>kingdoms.cla</code></strong><span data-i18n="permissions.cla">Permite usar o sistema de cla. (padrao: todos)</span></div>
+                <div><strong><code>kingdoms.cla.create</code></strong><span data-i18n="permissions.claCreate">Permite criar um cla. (padrao: todos)</span></div>
+                <div><strong><code>kingdoms.servers</code></strong><span data-i18n="permissions.servers">Permite abrir a lista de servidores para transferencia. (padrao: todos)</span></div>
+                <div><strong><code>kingdoms.auction</code></strong><span data-i18n="permissions.auction">Permite usar o leilao entre jogadores. (padrao: todos)</span></div>
+                <div><strong><code>kingdoms.rtp</code></strong><span data-i18n="permissions.rtp">Permite <code>/rtp</code>. (padrao: todos)</span></div>
+                <div><strong><code>kingdoms.rtp.bypass</code></strong><span data-i18n="permissions.rtpBypass">Ignora cooldown do RTP. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.inspect</code></strong><span data-i18n="permissions.inspect">Permite <code>/verinv</code> e <code>/verender</code>. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.fly</code></strong><span data-i18n="permissions.fly">Permite usar <code>/fly</code>. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.gamemode</code></strong><span data-i18n="permissions.gamemode">Permite usar <code>/gm</code>. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.setspawn</code></strong><span data-i18n="permissions.setspawn">Permite definir o spawn do lobby. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.timefreeze</code></strong><span data-i18n="permissions.timefreeze">Permite usar <code>/congelar</code> e <code>/freezy</code>. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.proxyportal</code></strong><span data-i18n="permissions.proxyportal">Permite criar e remover portais proxy customizados. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.caixa.admin</code></strong><span data-i18n="permissions.caixaAdmin">Permite administrar Caixas e Chaves. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.maintenance.admin</code></strong><span data-i18n="permissions.maintenanceAdmin">Permite administrar o modo manutencao. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.maintenance.bypass</code></strong><span data-i18n="permissions.maintenanceBypass">Ignora o redirecionamento do modo manutencao. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.nick</code></strong><span data-i18n="permissions.nick">Permite usar <code>/mudarnick</code> sem depender de VIP. (padrao: nenhum)</span></div>
+                <div><strong><code>kingdoms.chat.global</code></strong><span data-i18n="permissions.chatGlobal">Permite usar <code>/g</code> quando o global estiver bloqueado para membros. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.chat.global.bypass</code></strong><span data-i18n="permissions.chatGlobalBypass">Ignora bloqueio e cooldown do chat global. (padrao: OP)</span></div>
+                <div><strong><code>kingdoms.shopchest.create</code></strong><span data-i18n="permissions.shopChestCreate">Permite criar lojas de bau. (padrao: todos)</span></div>
+                <div><strong><code>kingdoms.shopchest.use</code></strong><span data-i18n="permissions.shopChestUse">Permite comprar e vender em lojas de bau. (padrao: todos)</span></div>
+                <div><strong><code>kingdoms.shopchest.admin</code></strong><span data-i18n="permissions.shopChestAdmin">Permite proteger e remover lojas de bau. (padrao: OP)</span></div>
+              </div>
+            </div>
+          </details>
+
+          <details id="wiki-painel" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.panel">Painel web do servidor</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="panel.explain">O painel web edita um rascunho seguro. Nada e aplicado direto no servidor enquanto um admin nao confirmar dentro do jogo.</p>
+              <div class="wiki-flow">
+                <span><b>1</b><span data-i18n="panel.step1">Gere a sessao</span></span>
+                <span><b>2</b><span data-i18n="panel.step2">Edite no site</span></span>
+                <span><b>3</b><span data-i18n="panel.step3">Salve o rascunho</span></span>
+                <span><b>4</b><span data-i18n="panel.step4">Confirme no jogo</span></span>
+              </div>
+              <pre><code>/aurapainel link
+/aurapainel tags
+/aurapainel status
+/aurapainel alteracoes
+/aurapainel aplicar
+/aurapainel rejeitar
+
+# aliases EN
+/aurapanel link|tags|status|changes|apply|reject</code></pre>
+              <p data-i18n="panel.afterLink">Depois de vincular o servidor na sua conta Rocha, ele aparece em Perfil > Servidor Aura. O link temporario expira em ate 30 minutos.</p>
+              <p data-i18n="panel.security">A sessao e criada apenas para administradores. O plugin envia um snapshot, o site salva um rascunho e o servidor so aplica depois de <code>/aurapainel aplicar</code>.</p>
+            </div>
+          </details>
+
+          <details id="wiki-modulos" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.modules">Modulos disponiveis</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="modules.explain">Cada modulo pode ser ligado/desligado em <code>modules.enabled</code>, pelo painel em Configurar ou por <code>/aurasetup toggle &lt;modulo&gt;</code>.</p>
+              <div class="wiki-module-grid">
+                <span><b>loja</b><span data-i18n="modules.item1">compra, venda e catalogo</span></span>
+                <span><b>shop_chest</b><span data-i18n="modules.item30">lojas de jogadores e placas</span></span>
+                <span><b>chat</b><span data-i18n="modules.item31">chat local, global e Bedrock</span></span>
+                <span><b>mudarnick</b><span data-i18n="modules.item35">apelido visual, tab e nametag</span></span>
+                <span><b>missao</b><span data-i18n="modules.item2">progresso e recompensas</span></span>
+                <span><b>discord</b><span data-i18n="modules.item3">vinculo e bridge</span></span>
+                <span><b>terreno</b><span data-i18n="modules.item4">claim de chunk</span></span>
+                <span><b>protecao</b><span data-i18n="modules.item5">regioes administrativas</span></span>
+                <span><b>npc</b><span data-i18n="modules.item6">NPCs do servidor</span></span>
+                <span><b>holograma</b><span data-i18n="modules.item7">textos flutuantes</span></span>
+                <span><b>tpa</b><span data-i18n="modules.item8">pedidos de teleporte</span></span>
+                <span><b>back</b><span data-i18n="modules.item9">voltar da morte</span></span>
+                <span><b>login</b><span data-i18n="modules.item10">senha e sessao</span></span>
+                <span><b>skin</b><span data-i18n="modules.item11">skin por nick</span></span>
+                <span><b>clearlag</b><span data-i18n="modules.item12">limpeza de drops</span></span>
+                <span><b>autopickup</b><span data-i18n="modules.item13">drops para inventario</span></span>
+                <span><b>border</b><span data-i18n="modules.item14">world border global</span></span>
+                <span><b>blocked_items</b><span data-i18n="modules.item15">itens proibidos</span></span>
+                <span><b>combatlog</b><span data-i18n="modules.item16">bloqueio em combate</span></span>
+                <span><b>duelo</b><span data-i18n="modules.item17">PvP combinado</span></span>
+                <span><b>pvp_state</b><span data-i18n="modules.item18">PvP pessoal</span></span>
+                <span><b>cla</b><span data-i18n="modules.item19">sistema de clans</span></span>
+                <span><b>vip_cargo</b><span data-i18n="modules.item20">VIPs e cargos</span></span>
+                <span><b>warp</b><span data-i18n="modules.item21">warps do servidor</span></span>
+                <span><b>rtp</b><span data-i18n="modules.item22">teleporte aleatorio</span></span>
+                <span><b>sethome</b><span data-i18n="modules.item23">homes</span></span>
+                <span><b>kit</b><span data-i18n="modules.item24">kit inicial</span></span>
+                <span><b>regras</b><span data-i18n="modules.item25">texto de regras</span></span>
+                <span><b>ajuda</b><span data-i18n="modules.item26">texto de ajuda</span></span>
+                <span><b>saldo_pix</b><span data-i18n="modules.item27">economia e pix</span></span>
+                <span><b>graveto</b><span data-i18n="modules.item28">captura de mobs</span></span>
+                <span><b>vanish</b><span data-i18n="modules.item29">staff invisivel</span></span>
+                <span><b>caixa</b><span data-i18n="modules.item32">crates, chaves e premios</span></span>
+                <span><b>keys_timer</b><span data-i18n="modules.item33">chaves por tempo jogado</span></span>
+                <span><b>lobby_spawn</b><span data-i18n="modules.item34">spawn e retorno do lobby</span></span>
+              </div>
+              <pre><code>/aurasetup status
+/aurasetup toggle loja
+/aurasetup enable discord
+/aurasetup disable combatlog
+/aurasetup reload</code></pre>
+            </div>
+          </details>
+
+          <details id="wiki-crates" class="wiki-section wiki-details">
+            <summary><span data-i18n="extra.cratesTitle">Caixas e chaves fisicas</span></summary>
+            <div class="wiki-section-body">
+              <div class="wiki-grid">
+                <article>
+                  <h3 data-i18n="extra.cratesTitle">Caixas e chaves fisicas</h3>
+                  <p data-i18n="extra.cratesText">O sistema de crates sorteia premios configurados por caixa. Admin define local, chave, premios, preview, animacao e efeitos.</p>
+                  <pre><code>/caixa menu
+/caixa definir &lt;id&gt;
+/caixa chave &lt;id&gt;
+/caixa addpremio &lt;id&gt;
+/caixa preview &lt;id&gt;
+/caixa listar
+/caixa remover &lt;id&gt;
+/chaves</code></pre>
+                </article>
+                <article>
+                  <h3 data-i18n="extra.timerKeysTitle">Chaves por tempo jogado</h3>
+                  <p data-i18n="extra.timerKeysText">Jogadores acumulam chaves conforme o tempo jogado e o cargo. O sistema usa o modulo <code>keys_timer</code> e a tela <code>/chaves</code>.</p>
+                  <p data-i18n="extra.timerKeysConfig">A entrega depende das configurações de tempo/cargo e pode ser consultada na tela de chaves.</p>
+                </article>
+              </div>
+            </div>
+          </details>
+
+          <details id="wiki-chat" class="wiki-section wiki-details">
+            <summary><span data-i18n="extra.chatTitle">Chat local e global</span></summary>
+            <div class="wiki-section-body">
+              <article>
+                <article>
+                  <h3 data-i18n="extra.chatTitle">Chat local e global</h3>
+                  <p data-i18n="extra.chatText">O chat local usa raio e mundo; o global pode ter bloqueio para membros, permissão e cooldown. Bedrock pode receber chat Vanilla.</p>
+                  <pre><code>/g &lt;mensagem&gt;
+/l &lt;mensagem&gt;</code></pre>
+                </article>
+              </article>
+            </div>
+          </details>
+
+          <details id="wiki-player-shop" class="wiki-section wiki-details">
+            <summary><span data-i18n="extra.playerShopTitle">Loja de jogador</span></summary>
+            <div class="wiki-section-body">
+              <article>
+                  <h3 data-i18n="extra.playerShopTitle">Loja de jogador</h3>
+                  <p data-i18n="extra.playerShopText">Além da loja global, jogadores podem criar lojas de baú e placas quando <code>shop_chest</code> estiver ativo.</p>
+                  <pre><code>/playerloja remover</code></pre>
+              </article>
+            </div>
+          </details>
+
+          <details id="wiki-lobby-spawn" class="wiki-section wiki-details">
+            <summary><span data-i18n="extra.lobbyTitle">Lobby e spawn</span></summary>
+            <div class="wiki-section-body">
+              <article>
+                  <h3 data-i18n="extra.lobbyTitle">Lobby e spawn</h3>
+                  <p data-i18n="extra.lobbyText">Controla <code>/spawn</code>, retorno ao entrar, posição de lobby e salvamento do local anterior.</p>
+                  <pre><code>/spawn
+/setspawn</code></pre>
+              </article>
+            </div>
+          </details>
+
+          <details id="wiki-auction" class="wiki-section wiki-details">
+            <summary><span data-i18n="extra.auctionTitle">Leilão</span></summary>
+            <div class="wiki-section-body">
+              <article>
+                  <h3 data-i18n="extra.auctionTitle">Leilão</h3>
+                  <p data-i18n="extra.auctionText">Leilão simples entre jogadores com aliases <code>/auction</code>, <code>/leilao</code> e <code>/ah</code>.</p>
+              </article>
+            </div>
+          </details>
+
+          <details id="wiki-maintenance" class="wiki-section wiki-details">
+            <summary><span data-i18n="extra.maintenanceTitle">Manutenção</span></summary>
+            <div class="wiki-section-body">
+              <article>
+                  <h3 data-i18n="extra.maintenanceTitle">Manutenção</h3>
+                  <p data-i18n="extra.maintenanceText">A manutenção redireciona jogadores pelo proxy. O bypass administrativo usa uma permissão separada e o destino depende da configuração do proxy.</p>
+                  <pre><code>/manutencao status|on|off|destino|atual</code></pre>
+              </article>
+            </div>
+          </details>
+
+          <details id="wiki-proxy-portal" class="wiki-section wiki-details">
+            <summary><span data-i18n="extra.proxyPortalTitle">Proxy Portal</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="extra.proxyPortalText">O sistema cria rotas de transferência usando regiões cúbicas marcadas manualmente ou uma rota por raio baseada no bloco de portal Nether Vanilla mais próximo. Não existe detecção automática de qualquer portal sem configurar uma rota.</p>
+              <pre><code>/proxyportal pos1|p1
+/proxyportal pos2|p2
+/proxyportal area &lt;id&gt; &lt;servidor&gt;
+/proxyportal raio &lt;id&gt; &lt;servidor&gt; [raio]
+/proxyportal retorno &lt;id&gt; spawn|portal
+/proxyportal listar
+/proxyportal remover &lt;id&gt;
+/proxyportal fillcmd</code></pre>
+              <p data-i18n="extra.proxyPortalBehavior">No modo <code>area</code>, você marca dois cantos e o plugin converte a região em blocos de construção/efeitos. No modo <code>raio</code>, ele procura o portal Nether Vanilla mais próximo na hora de salvar a rota; durante o uso, a entrada precisa tocar um portal Vanilla dentro do raio configurado.</p>
+            </div>
+          </details>
+
+          <details id="wiki-comandos" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.commands">Referencia completa de comandos</span></summary>
+            <div class="wiki-section-body">
+              <pre><code>/registrar &lt;senha&gt;     /entrar &lt;senha&gt;     /mudarsenha &lt;novaSenha&gt;
+/ajuda     /regras     /menu     /saldo     /enviarpix &lt;jogador&gt; &lt;valor&gt;
+/loja [comprar|vender|listar|remover]     /playerloja remover
+/leilao [sell|buy|remove|list]     /tpa &lt;jogador&gt;     /tpahere &lt;jogador&gt;
+/aceitar [jogador]     /negar [jogador]     /warp [nome]     /warps
+/rtp     /spawn     /sethome &lt;nome&gt;     /home &lt;nome&gt;     /homes     /delhome &lt;nome&gt;     /back
+/duelo &lt;jogador&gt;     /g &lt;mensagem&gt;     /l &lt;mensagem&gt;     /pvp     /desativar
+/autopickup [ligar|desligar|status]     /kit     /kits     /missao [ativar|listar]
+/cancelar missao     /chave &lt;codigo&gt;     /chaves     /cla     /. [entrar|sair|&lt;mensagem&gt;]
+/graveto     /vincular [codigo]     /skin &lt;nick&gt;     /textura     /servers
+
+/menuadmin     /lojaadmin     /setvip &lt;jogador&gt; &lt;vip|none&gt;     /set chave &lt;tipo&gt; &lt;jogador&gt;
+/entregarcargo     /criarcargo     /npc     /holograma     /expirarvip     /gerarchave
+/resetkitvip     /setwarp &lt;nome&gt;     /delwarp &lt;nome&gt;     /setspawn     /gm &lt;modo&gt;
+/rapidologin &lt;jogador&gt;     /multiconta     /setborder &lt;tamanho&gt;     /aurasetup     /aurapainel
+/manutencao     /proxyportal     /caixa     /dinheiro     /clearlag     /protecao     /vanish
+/desvincular &lt;jogador&gt;     /verinv &lt;jogador&gt;     /verender &lt;jogador&gt;     /congelar     /fly
+
+/cla criar &lt;tag&gt; [cor] [nome]     /cla membros     /cla aliados     /cla aliar &lt;cla&gt;
+/cla aceitaralianca &lt;cla&gt;     /cla removeralianca &lt;cla&gt;     /cla convidar &lt;jogador&gt;     /cla aceitar
+/cla banco guardar|retirar &lt;valor&gt;     /cla perfil     /cla retag &lt;tag&gt;     /cla renomear &lt;nome&gt;
+/cla descricao &lt;texto&gt;     /cla cor &lt;cor&gt;     /cla cargo &lt;jogador&gt; &lt;dono|subdono|membro&gt;
+/cla expulsar &lt;jogador&gt;     /cla sair     /cla deletar     /cla base     /cla enderchest
+/cla setwarp &lt;nome&gt;     /cla warp &lt;nome&gt;     /cla chat [on|off|toggle|status]     /cla pvp [on|off]
+
+/terreno [criar|registrar|permitir|remover|listar|deletar|ver]     /protecao
+/lojaadmin definircompra|definirvenda|listar|recarregar     /clearlag [agora|status]
+/dinheiro adicionar|remover     /caixa definir|listar|chave|dar|addpremio|premio|preview
+/npc criar|listar|remover|limparsoltos|editar     /holograma criar|listar|remover|editar
+/proxyportal ativar|criar|listar|remover|retorno|raio|limparareas|limpartudo|recarregar
+/aurasetup ativar|desativar|alteracoes|aplicar|rejeitar|painel|recarregar|idioma|placar</code></pre>
+            </div>
+          </details>
+
+          <details id="wiki-login" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.login">Login e AuraClient</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="login.explain">Sistema de registro local para servidor offline/online misto, com senha, troca de senha, controle de sessao e protecoes contra multiconta.</p>
+              <div class="wiki-command-table">
+                <div><strong><code>/registrar &lt;senha&gt;</code></strong><span data-i18n="login.registrar">Cria a senha do jogador.</span></div>
+                <div><strong><code>/entrar &lt;senha&gt;</code></strong><span data-i18n="login.entrar">Autentica a sessao atual.</span></div>
+                <div><strong><code>/mudarsenha &lt;novaSenha&gt;</code></strong><span data-i18n="login.mudarsenha">Troca a senha da conta.</span></div>
+                <div><strong><code>/rapidologin &lt;nome&gt;</code></strong><span data-i18n="login.rapidlogin">Admin autentica um jogador manualmente.</span></div>
+                <div><strong><code>/multiconta ...</code></strong><span data-i18n="login.multiconta">Admin controla limite de contas por IP.</span></div>
+              </div>
+              <p data-i18n="login.config">Configuracoes principais: <code>enableIpTrust</code>, <code>trustedDurationSeconds</code>, <code>multiAccount</code>, <code>modGate.requireAuraClient</code>, <code>authRouting</code> e packs Java/Bedrock.</p>
+            </div>
+          </details>
+
+          <details id="wiki-discord" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.discord">Discord</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="discord.explain">Integra vinculo de conta, bridge e exigencia de Discord. O token do bot fica no servidor, nunca no site publico.</p>
+              <div class="wiki-command-table">
+                <div><strong><code>/vincular</code></strong><span data-i18n="discord.vincular">Gera codigo para vincular Minecraft ao Discord.</span></div>
+                <div><strong><code>/vincular &lt;codigo&gt;</code></strong><span data-i18n="discord.vincularCodigo">Consome codigo recebido pelo fluxo do bot.</span></div>
+                <div><strong><code>/desvincular &lt;jogador&gt;</code></strong><span data-i18n="discord.desvincular">Admin remove vinculo de um jogador.</span></div>
+              </div>
+              <p data-i18n="discord.config">Campos importantes: <code>discordLink.botToken</code>, <code>controlChannelId</code>, <code>forceOnJoin</code>, <code>requiredAfterHours</code> e <code>useOriginalServerText</code>.</p>
+              <p data-i18n="discord.channels">Use <code>chatChannelId</code> para o canal publico de bridge e <code>controlChannelId</code> para o canal privado de controle entre bots. <code>forceOnJoin</code> e <code>requiredAfterHoursEnabled</code> podem exigir vinculo no login.</p>
+            </div>
+          </details>
+
+          <details id="wiki-loja" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.shop">Loja</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="shop.explain">Menu de compra/venda com categorias, produtos, icone por item Minecraft, valor de compra, valor de venda e moeda configuravel.</p>
+              <div class="wiki-command-table">
+                <div><strong><code>/loja</code></strong><span data-i18n="shop.abre">Abre a loja.</span></div>
+                <div><strong><code>/loja comprar|vender|listar</code></strong><span data-i18n="shop.comando">Usa loja por comando quando GUI nao for ideal.</span></div>
+                <div><strong><code>/loja vender &lt;item&gt; &lt;quantidade|tudo&gt;</code></strong><span data-i18n="shop.sellOptions">Vende uma quantidade ou tudo quando usar o argumento <code>all</code>.</span></div>
+                <div><strong><code>/loja buy|sell|list|remove</code></strong><span data-i18n="shop.englishAliases">Aliases EN aceitos pelo executor da loja.</span></div>
+                <div><strong><code>/shopadmin setbuy|setsell|list|reload</code></strong><span data-i18n="shop.admin">Administra valores por comando.</span></div>
+              </div>
+              <p data-i18n="shop.file">Arquivo principal: <code>shop.yml</code>. Pelo painel, use Loja > Catalogo para revisar e Loja > Editar produtos para adicionar/remover itens.</p>
+            </div>
+          </details>
+
+          <details id="wiki-missoes" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.missions">Missoes</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="missions.explain">Missoes com categorias e objetivos de matar mobs, minerar blocos ou colher plantacoes. O jogador ativa uma missao, progride e pode cancelar.</p>
+              <div class="wiki-command-table">
+                <div><strong><code>/missao</code></strong><span data-i18n="missions.abre">Abre o menu de missoes.</span></div>
+                <div><strong><code>/missao ativar &lt;id&gt;</code></strong><span data-i18n="missions.ativar">Ativa uma missao por ID.</span></div>
+                <div><strong><code>/missao listar [categoria]</code></strong><span data-i18n="missions.listar">Lista missoes carregadas.</span></div>
+                <div><strong><code>/cancelar missao</code></strong><span data-i18n="missions.cancelar">Cancela missao ativa e remove progresso.</span></div>
+              </div>
+              <p data-i18n="missions.file">Arquivo principal: <code>missions.yml</code>. Configuracoes: <code>missions.autosaveSeconds</code> e <code>missions.repeatCooldownSeconds</code>.</p>
+              <p data-i18n="missions.categories">Categorias atuais incluem <code>mining</code> e <code>farming</code>; use <code>/quest activate</code> e <code>/quest list</code> como aliases EN.</p>
+            </div>
+          </details>
+
+          <details id="wiki-vip" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.vip">VIP e cargos</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="vip.explain">Controla VIPs, cargos visuais, chaves de ativacao, kit VIP e utilidades como bau, craft, bigorna e topo.</p>
+              <div class="wiki-command-table">
+                <div><strong><code>/setvip &lt;player&gt; &lt;vip|none&gt;</code></strong><span data-i18n="vip.setvip">Define ou remove VIP.</span></div>
+                <div><strong><code>/entregarcargo &lt;player&gt; &lt;cargo|none&gt;</code></strong><span data-i18n="vip.entregarcargo">Define cargo visual especial.</span></div>
+                <div><strong><code>/gerarchave &lt;vip&gt; &lt;tempo&gt;</code></strong><span data-i18n="vip.gerarchave">Cria chave de uso unico.</span></div>
+                <div><strong><code>/chave &lt;codigo&gt;</code></strong><span data-i18n="vip.chave">Ativa uma chave VIP.</span></div>
+                <div><strong><code>/kitvip [tipo]</code></strong><span data-i18n="vip.kitvip">Entrega kit do VIP.</span></div>
+                <div><strong><code>/resetkitvip &lt;jogador&gt;</code></strong><span data-i18n="vip.resetkitvip">Libera novo uso do kit VIP.</span></div>
+              </div>
+              <p data-i18n="vip.config">No painel, VIPs podem ter itens, quantidade, lore, nome customizado, brilho, inquebravel e encantamentos Vanilla/NBT.</p>
+              <p data-i18n="vip.behavior">O kit VIP e de uso unico por VIP quando <code>vipKit.singleUsePerVip</code> esta ativo; <code>/resetkitvip</code> libera novo uso.</p>
+            </div>
+          </details>
+
+          <details id="wiki-prefix" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.prefix">Prefix visual e glyphs</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="prefix.explain">O plugin separa visual de chat, nametag e tablist. Os glyphs dependem do resource pack Java/Bedrock para aparecerem corretos.</p>
+              <ul>
+                <li data-i18n="prefix.chatMessage"><code>chat_message</code>: formato das mensagens no chat.</li>
+                <li data-i18n="prefix.nametagPlayer"><code>nametag_player</code>: texto acima da cabeca.</li>
+                <li data-i18n="prefix.tablist"><code>tablist</code>: visual na lista de jogadores.</li>
+              </ul>
+              <p data-i18n="prefix.help">Use codigos Minecraft como <code>&amp;6&amp;l</code> nos campos que aceitam texto formatado. O painel renderiza previa com a formatacao basica.</p>
+            </div>
+          </details>
+
+          <details id="wiki-npc" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.npc">NPC</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="npc.explain">NPCs do servidor com skin, titulo, descricao, acao e posicao. Podem abrir menu, TPA, loja, missoes ou executar comando configurado.</p>
+              <pre><code>/npc criar &lt;id&gt; [skinNick]
+/npc listar
+/npc remover &lt;id&gt;
+/npc limparsoltos
+/npc editar &lt;id&gt; skin &lt;nick&gt;
+/npc editar &lt;id&gt; titulo &lt;texto&gt;
+/npc editar &lt;id&gt; descricao &lt;texto&gt;
+/npc editar &lt;id&gt; acao &lt;menu|tpa|loja|missao|comando&gt;
+/npc editar &lt;id&gt; comando &lt;texto&gt;
+/npc editar &lt;id&gt; posicao &lt;x&gt; &lt;y&gt; &lt;z&gt; [mundo]
+
+# aliases EN: create list remove cleanup edit modshortcut title description action command rename position</code></pre>
+              <p data-i18n="npc.config">Config global: <code>npc.renderDistanceChunks</code> e <code>npc.hologramOffsetY</code>.</p>
+              <p data-i18n="npc.currentConfig">Valores atuais: renderiza a 1 chunk e usa offset de holograma 2.05. As skins nomeadas ficam em <code>npc_visuals.yml</code>.</p>
+            </div>
+          </details>
+
+          <details id="wiki-holograma" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.hologram">Texto flutuante</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="hologram.explain">Hologramas simples para avisos, lobby, lojas e areas do servidor.</p>
+              <pre><code>/holograma criar &lt;id&gt;
+/holograma listar
+/holograma remover &lt;id&gt;
+/holograma editar &lt;id&gt; titulo &lt;texto&gt;
+/holograma editar &lt;id&gt; descricao &lt;texto&gt;
+/holograma editar &lt;id&gt; aqui
+/holograma editar &lt;id&gt; posicao &lt;x&gt; &lt;y&gt; &lt;z&gt; [mundo]
+/holograma editar &lt;id&gt; excluir|filtrar &lt;texto&gt;
+/holograma editar &lt;id&gt; incluir|desfiltrar &lt;texto&gt;
+/holograma editar &lt;id&gt; limparfiltro|fundoseparado
+
+# aliases EN: create list remove edit title description here position exclude filter include unfilter clearfilter splitbackground</code></pre>
+              <p data-i18n="hologram.config">Config global: <code>holograma.renderDistanceChunks</code>, <code>backgroundEnabled</code> e <code>lineWidth</code>.</p>
+              <p data-i18n="hologram.currentConfig">Valores atuais: renderiza a 1 chunk, fundo ligado e largura de linha 220.</p>
+            </div>
+          </details>
+
+          <details id="wiki-cla" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.cla">Cla</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="cla.explain">Sistema de grupo de jogadores com tag, nome, descricao, cor, membros, subdonos, base, warps, banco, chat, aliancas e PvP interno.</p>
+              <pre><code>/cla criar &lt;tag&gt; [cor] [nome]
+/cla info
+/cla membros
+/cla ranking
+/cla convidar &lt;jogador&gt;
+/cla aceitar
+/cla base
+/cla base set
+/cla setwarp &lt;nome&gt;
+/cla warp &lt;nome&gt;
+/cla banco guardar &lt;valor&gt;
+/cla banco retirar &lt;valor&gt;
+/cla chat [on|off|toggle|status]
+/cla cargo &lt;jogador&gt; &lt;subdono|membro&gt;
+/. &lt;mensagem&gt;</code></pre>
+              <p data-i18n="cla.config">Config principal: tamanho de tag/nome, maximo de membros, warps, banco, aliancas, PvP interno e auto delete quando so resta dono.</p>
+              <p data-i18n="cla.currentConfig">Valores atuais: tag 2-5 caracteres, nome 3-16, descricao ate 60, 10 membros, 2 subdonos, 1 warp, convite por 300s e auto-delete apos 10h somente com o dono. Aliancas, PvP interno, Ender Chest, warp extra, cargos e banco estao habilitados.</p>
+            </div>
+          </details>
+
+          <details id="wiki-terreno" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.claim">Terreno</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="claim.explain">Claim de chunk 16x16. O jogador pega uma pa de terreno e registra o chunk clicando em um bloco. Por padrao pode exigir VIP.</p>
+              <div class="wiki-command-table">
+                <div><strong><code>/terreno</code></strong><span data-i18n="claim.pega">Pega a pa de claim.</span></div>
+                <div><strong><code>/terreno permitir &lt;jogador&gt;</code></strong><span data-i18n="claim.permitir">Autoriza outro jogador no terreno.</span></div>
+                <div><strong><code>/terreno remover &lt;jogador&gt;</code></strong><span data-i18n="claim.remover">Remove permissao.</span></div>
+                <div><strong><code>/terreno listar</code></strong><span data-i18n="claim.listar">Mostra terrenos.</span></div>
+                <div><strong><code>/terreno ver</code></strong><span data-i18n="claim.ver">Mostra borda do chunk atual.</span></div>
+                <div><strong><code>/terreno deletar [jogador]</code></strong><span data-i18n="claim.deletar">Remove claim proprio ou de outro como admin.</span></div>
+              </div>
+              <p data-i18n="claim.currentConfig">Config atual: VIP e obrigatorio; limite de 4096 blocos para membro, 16384 para VIP e 262144 para admin. O limite VIP e separado do limite comum.</p>
+            </div>
+          </details>
+
+          <details id="wiki-protecao" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.protection">Protecao</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="protection.explain">Areas administrativas por selecao de duas posicoes. Serve para spawn, lojas, arenas ou regioes especiais.</p>
+              <pre><code>/protecao ferramenta [nome]
+/protecao pos1
+/protecao pos2
+/protecao toggle &lt;area&gt; &lt;break|place|interact|bucket|entry|monster|pvp|entity_damage|explosion&gt;
+/protecao permitir &lt;area&gt; &lt;jogador&gt;
+/protecao remover &lt;area&gt; &lt;jogador&gt;
+/protecao listar
+/protecao deletar &lt;area&gt;</code></pre>
+              <p data-i18n="protection.flags">As flags aceitas incluem break, place, interact, buckets, entry, monsters, pvp, entity_damage e explosions. A area pode ser criada com duas posicoes e administrada pelo painel ou comando.</p>
+            </div>
+          </details>
+
+          <details id="wiki-regras-ajuda" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.rules">Regras e ajuda</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="rules.explain">Dois textos simples para orientar jogador dentro do servidor. Aceitam codigos de cor Minecraft e link de wiki.</p>
+              <div class="wiki-command-table">
+                <div><strong><code>/regras</code></strong><span data-i18n="rules.regras">Mostra titulo, linhas de regras e link configurado.</span></div>
+                <div><strong><code>/ajuda</code></strong><span data-i18n="rules.ajuda">Mostra comandos basicos, instrucoes de login e link configurado.</span></div>
+              </div>
+              <p data-i18n="rules.config">Campos principais: <code>texts.regrasTitle</code>, <code>texts.regras</code>, <code>texts.regrasWikiUrl</code>, <code>texts.ajudaTitle</code>, <code>texts.ajuda</code> e <code>texts.ajudaWikiUrl</code>.</p>
+            </div>
+          </details>
+
+          <details id="wiki-teleporte" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.teleport">Teleporte</span></summary>
+            <div class="wiki-section-body">
+              <div class="wiki-grid">
+                <article>
+                  <h3 data-i18n="teleport.tpaTitle">TPA e Back</h3>
+                  <p data-i18n="teleport.tpaText"><code>/tpa &lt;player&gt;</code>, <code>/aceitar &lt;player&gt;</code>, <code>/negar &lt;player&gt;</code> e <code>/back</code>. Pode bloquear por dimensao.</p>
+                </article>
+                <article>
+                  <h3 data-i18n="teleport.warpTitle">Warp, Home e RTP</h3>
+                  <p data-i18n="teleport.warpText"><code>/setwarp</code>, <code>/warp</code>, <code>/sethome</code>, <code>/home</code>, <code>/delhome</code> e <code>/rtp</code>. RTP respeita raio, cooldown, world border e agua/lava.</p>
+                </article>
+              </div>
+              <p data-i18n="teleport.currentConfig">Config atual: RTP tem cooldown de 300s, warmup de 3s, raio de 250 a 5000, ate 24 tentativas e esta habilitado apenas no Overworld por padrao. TPA e Back estao habilitados no Overworld, Nether e End.</p>
+            </div>
+          </details>
+
+          <details id="wiki-pvp" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.pvp">PvP, duelo e combat log</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="pvp.explain">Sistemas de PvP personalizado, duelos e combat log com protecoes de saida e bloqueios em combate.</p>
+              <div class="wiki-command-table">
+                <div><strong><code>/pvp ligado|desligado|status</code></strong><span data-i18n="pvp.status">Jogador muda estado pessoal de PvP.</span></div>
+                <div><strong><code>/desativar pvp &lt;dimensao&gt; &lt;on|off|status&gt;</code></strong><span data-i18n="pvp.admin">Admin controla PvP por dimensao.</span></div>
+                <div><strong><code>/duelo &lt;jogador&gt;</code></strong><span data-i18n="pvp.duelo">Cria desafio PvP em arena temporaria.</span></div>
+              </div>
+              <p data-i18n="pvp.config">CombatLog pode bloquear warp, tpa, rtp, home e back durante combate. Tambem pode matar ao sair, se configurado.</p>
+              <p data-i18n="pvp.currentConfig">Config atual: combate dura 8s; bloqueia warp, TPA, RTP, home, back e base do cla; mostra actionbar e nao mata ao sair por padrao. Duelo aceita as tres dimensoes, com convite de 30s, pronto de 45s e countdown de 3s.</p>
+            </div>
+          </details>
+
+          <details id="wiki-border-bloqueios" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.border">Border e bloqueios</span></summary>
+            <div class="wiki-section-body">
+              <div class="wiki-grid">
+                <article>
+                  <h3 data-i18n="border.globalTitle">Border Global</h3>
+                  <p data-i18n="border.globalText">Define tamanho e centro de world border para Overworld, Nether e End. Pode ser ativado pelo modulo <code>border</code>.</p>
+                  <p data-i18n="border.globalCommand">Comando rapido: <code>/setborder &lt;tamanho&gt;</code> usa sua posicao atual como centro no mundo em que voce esta.</p>
+                </article>
+                <article>
+                  <h3 data-i18n="border.blockedTitle">Itens Bloqueados</h3>
+                  <p data-i18n="border.blockedText">Remove materiais proibidos do inventario e pode verificar Ender Chest. Configure em <code>blockedItems.materials</code> ou pelo painel em Itens bloqueados.</p>
+                  <p data-i18n="border.blockedTip">Use para bloquear command block, bedrock, barreiras ou qualquer material que nao deve circular.</p>
+                </article>
+              </div>
+              <p data-i18n="border.currentConfig">Por padrao, o modulo border e itens bloqueados comecam desativados. A border inicial e 8000 no Overworld, 5000 no Nether e 12000 no End; itens bloqueados verificam tambem Ender Chest quando ativados.</p>
+            </div>
+          </details>
+
+          <details id="wiki-utilidades" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.utilities">Utilidades</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="utilities.explain">Menu, kits, saldo, pix, clearlag, graveto, autopickup, skin, vanish e inspeccao para o dia a dia do jogador.</p>
+              <div class="wiki-command-table">
+                <div><strong><code>/menu</code></strong><span data-i18n="utilities.menuMain">Menu principal Bedrock/Geyser.</span></div>
+                <div><strong><code>/menuadmin</code></strong><span data-i18n="utilities.menuAdmin">Menu administrativo Bedrock.</span></div>
+                <div><strong><code>/kit</code></strong><span data-i18n="utilities.kit">Kit inicial de uso unico.</span></div>
+                <div><strong><code>/saldo</code></strong><span data-i18n="utilities.saldo">Mostra saldo.</span></div>
+                <div><strong><code>/dinheiro adicionar|remover</code></strong><span data-i18n="utilities.dinheiro">Admin altera saldo.</span></div>
+                <div><strong><code>/enviarpix &lt;jogador&gt; &lt;valor&gt;</code></strong><span data-i18n="utilities.pix">Transfere moedas.</span></div>
+                <div><strong><code>/clearlag [agora|status]</code></strong><span data-i18n="utilities.clearlag">Limpa drops configurados.</span></div>
+                <div><strong><code>/graveto</code></strong><span data-i18n="utilities.graveto">Recebe item de captura de mobs liberados.</span></div>
+                <div><strong><code>/autopickup [ligar|desligar|status]</code></strong><span data-i18n="utilities.autopickup">Controla coleta automatica.</span></div>
+                <div><strong><code>/skin &lt;nick&gt;</code></strong><span data-i18n="utilities.skin">Define skin oficial por nick.</span></div>
+                <div><strong><code>/vanish</code></strong><span data-i18n="utilities.vanish">Invisibilidade para staff.</span></div>
+                <div><strong><code>/verinv</code> / <code>/verender</code></strong><span data-i18n="utilities.inspect">Inspecao de inventario e ender chest.</span></div>
+              </div>
+              <p data-i18n="utilities.currentConfig">AutoPickup esta ativo por padrao para blocos, mobs e pesca; o jogador pode alternar e recebe aviso de inventario cheio. ClearLag roda a cada 600s, remove drops com pelo menos 30s, ignora itens com nome customizado e avisa em 60s e 5s.</p>
+            </div>
+          </details>
+
+          <details id="wiki-troubleshooting" class="wiki-section wiki-details">
+            <summary><span data-i18n="section.troubleshooting">Problemas comuns</span></summary>
+            <div class="wiki-section-body">
+              <p data-i18n="troubleshooting.explain">Checklist rapido para os erros mais frequentes de glyphs, comandos, painel e login.</p>
+              <details open>
+                <summary data-i18n="troubleshooting.glyphsTitle">Glyphs aparecem quadrados ou pequenos</summary>
+                <p data-i18n="troubleshooting.glyphsText">O jogador nao carregou o resource pack correto. Confira <code>javaResourcePack</code>, <code>bedrockResourcePack</code> e se o servidor exige o pack.</p>
+              </details>
+              <details>
+                <summary data-i18n="troubleshooting.commandTitle">Comando nao aparece no tab</summary>
+                <p data-i18n="troubleshooting.commandText">Confira se o modulo esta ativo em <code>modules.enabled</code> ou no painel Configurar. Depois use <code>/aurasetup reload</code> e peça para o jogador relogar se necessario.</p>
+              </details>
+              <details>
+                <summary data-i18n="troubleshooting.siteTitle">Alterei no site e nao mudou no servidor</summary>
+                <p data-i18n="troubleshooting.siteText">Salvar no site cria rascunho. Entre no servidor e use <code>/aurapainel alteracoes</code> e depois <code>/aurapainel aplicar</code>.</p>
+              </details>
+              <details>
+                <summary data-i18n="troubleshooting.discordTitle">Discord envia jogo para Discord, mas nao volta</summary>
+                <p data-i18n="troubleshooting.discordText">Revise <code>discordLink.botToken</code>, <code>controlChannelId</code>, permissoes do bot no canal e se o modulo Discord esta ativo.</p>
+              </details>
+              <details>
+                <summary data-i18n="troubleshooting.loginTitle">Jogador nao consegue entrar</summary>
+                <p data-i18n="troubleshooting.loginText">Confira Login, Multiconta, AuthRouting, exigencia do AuraClient e se <code>/registrar</code>/<code>/entrar</code> estao liberados para membros.</p>
+              </details>
+              <details>
+                <summary data-i18n="troubleshooting.modulesTitle">Modulo parece ativo, mas nao funciona</summary>
+                <p data-i18n="troubleshooting.modulesText">Confira o modulo em <code>modules.enabled</code> e tambem a chave interna correspondente, como <code>clearLag.enabled</code>, <code>blockedItems.enabled</code> ou <code>autoPickup.enabled</code>. Depois execute <code>/aurasetup reload</code>.</p>
+              </details>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <script src="./lang.js?v=6" defer></script>
+    <script src="./app.js?v=10" defer></script>
+  </body>
+</html>

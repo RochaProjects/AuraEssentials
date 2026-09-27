@@ -1,0 +1,237 @@
+{
+  "generatedFrom": "menu-gui-rl-mod/src/main/resources/assets/minecraft/font/default.json",
+  "total": 33,
+  "glyphs": {
+    "E800": {
+      "src": "/site-assets/glyphs/dono_java.png",
+      "file": "dono_java.png",
+      "label": "dono java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E801": {
+      "src": "/site-assets/glyphs/admin_java.png",
+      "file": "admin_java.png",
+      "label": "admin java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E802": {
+      "src": "/site-assets/glyphs/membro_java.png",
+      "file": "membro_java.png",
+      "label": "membro java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E803": {
+      "src": "/site-assets/glyphs/vip_java.png",
+      "file": "vip_java.png",
+      "label": "vip java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E804": {
+      "src": "/site-assets/glyphs/diamante_java.png",
+      "file": "diamante_java.png",
+      "label": "diamante java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E805": {
+      "src": "/site-assets/glyphs/ferro_java.png",
+      "file": "ferro_java.png",
+      "label": "ferro java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E806": {
+      "src": "/site-assets/glyphs/ouro_java.png",
+      "file": "ouro_java.png",
+      "label": "ouro java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E807": {
+      "src": "/site-assets/glyphs/pedra_java.png",
+      "file": "pedra_java.png",
+      "label": "pedra java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E808": {
+      "src": "/site-assets/glyphs/novato_java.png",
+      "file": "novato_java.png",
+      "label": "novato java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E809": {
+      "src": "/site-assets/glyphs/fim_java.png",
+      "file": "fim_java.png",
+      "label": "fim java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E80A": {
+      "src": "/site-assets/glyphs/nether_java.png",
+      "file": "nether_java.png",
+      "label": "nether java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E80B": {
+      "src": "/site-assets/glyphs/espaco_java.png",
+      "file": "espaco_java.png",
+      "label": "espaco java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E80C": {
+      "src": "/site-assets/glyphs/fogo_java.png",
+      "file": "fogo_java.png",
+      "label": "fogo java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E80D": {
+      "src": "/site-assets/glyphs/agua_java.png",
+      "file": "agua_java.png",
+      "label": "agua java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E80E": {
+      "src": "/site-assets/glyphs/ar_java.png",
+      "file": "ar_java.png",
+      "label": "ar java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E80F": {
+      "src": "/site-assets/glyphs/twitch_java.png",
+      "file": "twitch_java.png",
+      "label": "twitch java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E810": {
+      "src": "/site-assets/glyphs/youtube_java.png",
+      "file": "youtube_java.png",
+      "label": "youtube java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E811": {
+      "src": "/site-assets/glyphs/atirador_java.png",
+      "file": "atirador_java.png",
+      "label": "atirador java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E812": {
+      "src": "/site-assets/glyphs/comando_java.png",
+      "file": "comando_java.png",
+      "label": "comando java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E813": {
+      "src": "/site-assets/glyphs/construtor_java.png",
+      "file": "construtor_java.png",
+      "label": "construtor java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E814": {
+      "src": "/site-assets/glyphs/lendas_java.png",
+      "file": "lendas_java.png",
+      "label": "lendas java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E815": {
+      "src": "/site-assets/glyphs/discord_java.png",
+      "file": "discord_java.png",
+      "label": "discord java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E816": {
+      "src": "/site-assets/glyphs/ajudante_java.png",
+      "file": "ajudante_java.png",
+      "label": "ajudante java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E817": {
+      "src": "/site-assets/glyphs/reino_java.png",
+      "file": "reino_java.png",
+      "label": "reino java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E818": {
+      "src": "/site-assets/glyphs/morto_java.png",
+      "file": "morto_java.png",
+      "label": "morto java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E819": {
+      "src": "/site-assets/glyphs/hacker_java.png",
+      "file": "hacker_java.png",
+      "label": "hacker java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E81A": {
+      "src": "/site-assets/glyphs/designer_java.png",
+      "file": "designer_java.png",
+      "label": "designer java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E81B": {
+      "src": "/site-assets/glyphs/abate_java.png",
+      "file": "abate_java.png",
+      "label": "abate java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E81C": {
+      "src": "/site-assets/glyphs/pixel_java.png",
+      "file": "pixel_java.png",
+      "label": "pixel java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E81D": {
+      "src": "/site-assets/glyphs/dev_java.png",
+      "file": "dev_java.png",
+      "label": "dev java",
+      "ascent": 18,
+      "height": 24
+    },
+    "E120": {
+      "src": "/site-assets/glyphs/time_vermelho_java.png",
+      "file": "time_vermelho_java.png",
+      "label": "time vermelho java",
+      "ascent": 15,
+      "height": 20
+    },
+    "E121": {
+      "src": "/site-assets/glyphs/time_azul_java.png",
+      "file": "time_azul_java.png",
+      "label": "time azul java",
+      "ascent": 15,
+      "height": 20
+    },
+    "E127": {
+      "src": "/site-assets/glyphs/time_sem_time_java.png",
+      "file": "time_sem_time_java.png",
+      "label": "time sem time java",
+      "ascent": 15,
+      "height": 20
+    }
+  }
+}
